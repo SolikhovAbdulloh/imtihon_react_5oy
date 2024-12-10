@@ -90,7 +90,7 @@ function Like_page() {
               model: e.model,
               brand: e.brand,
               price: e.category,
-              image: e.image,
+              image: e.image[2],
             
             }
           ))}
