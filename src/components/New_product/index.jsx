@@ -22,6 +22,7 @@ function NewProduct(props) {
     price,
     description,
     rating,
+    color,
     images,
   } = props;
 
@@ -63,6 +64,7 @@ function NewProduct(props) {
                     model: model,
                     brand: brand,
                     category: category,
+                    rangi:color,
                   },
                 });
 

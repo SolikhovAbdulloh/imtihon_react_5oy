@@ -23,7 +23,6 @@ const {state} = useContext(ShopAppContext)
   const navigate = useNavigate()
   return (
     <div className="relative header">
-      {/* Desktop Navbar */}
       <div className="flex justify-between cursor-pointer items-center px-4 py-2 sm:px-0">
         <img
           src={logo}
@@ -71,7 +70,6 @@ const {state} = useContext(ShopAppContext)
       </div>
       <div className="border-[1px] mt-4 border-[#e6e6e6] w-[100%]"></div>
 
-      {/* Mobile Sidebar Menu */}
       {isMobileMenuOpen && (
         <div className="h-full">
           <div className="absolute  top-0 w-[70%] bg-[#063A88]  text-white shadow-lg sm:!hidden left-0   flex flex-col items-start p-4 z-[999] transition-transform transform translate-y-4 duration-1000">

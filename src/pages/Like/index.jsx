@@ -7,7 +7,6 @@ function Like_page() {
   const { state } = useContext(ShopAppContext);
   const { dispatch } = useContext(ShopAppContext);
 
-  // Jadval ustunlarini belgilash
   const columns = [
     {
       title: "ID",
@@ -81,7 +80,7 @@ function Like_page() {
           </Button>
         </div>
       ) : (
-        <div>
+        <strong>
           <Table
             dataSource={state.liked.map((e) => (
               {
@@ -100,7 +99,7 @@ function Like_page() {
             scroll={{ x: "max-content" }}
             className="min-w-full"
           />
-        </div>
+        </strong>
       )}
     </section>
   );
