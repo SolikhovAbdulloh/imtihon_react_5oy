@@ -1,4 +1,5 @@
 import { createContext, useReducer } from "react";
+import { data } from "react-router-dom";
 
 const ShopAppContext = createContext({});
 
@@ -6,8 +7,8 @@ const Initilstate = {
   data: JSON.parse(localStorage.getItem("shop")) || [],
   liked: JSON.parse(localStorage.getItem("likes")) || [],
 };
-const ShopContext = ({ children }) =>{
-  const reducer = (state, { type, value }) =>{
+const ShopContext = ({ children }) => {
+  const reducer = (state, { type, value }) => {
     switch (type) {
       case "add":
         {
@@ -34,8 +35,7 @@ const ShopContext = ({ children }) =>{
         {
           const exists = state.liked.find((item) => item.id === value.id);
 
-          if (exists){
-
+          if (exists) {
             const updatedData = state.liked.map((item) =>
               item.id === value.id
                 ? { ...item, quantity: item.quantity + 1 }
@@ -62,6 +62,24 @@ const ShopContext = ({ children }) =>{
         localStorage.setItem("liked", JSON.stringify(filter));
         console.log(filter, state.liked);
         return { ...state, liked: filter };
+      }
+
+      case "increment": {
+        const updatedData = state.data.map((item) =>
+          item.id === value.id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+        localStorage.setItem("shop", JSON.stringify(updatedData));
+        return { ...state, data: updatedData };
+      }
+      
+      case 'decrement':{
+         const updatedData = state.data.map((item) =>
+           item.id === value.id
+             ? { ...item, quantity: item.quantity > 0 ? item.quantity - 1 : 0}
+             : item
+         );
+         localStorage.setItem("shop", JSON.stringify(updatedData));
+         return { ...state, data: updatedData };
       }
 
       default:

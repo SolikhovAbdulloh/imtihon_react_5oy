@@ -97,13 +97,12 @@ function Products() {
           {loading
             ? Card_pruduct_loader()
             : data.map((e) => <NewProduct key={e.id} {...e} />)}
-          <br />
           {data.map((e) => (
             <NewProduct2 key={e.id} {...e} />
           ))}
         </div>
       </div>
-      <div className='my-1 w-full'>
+      <div className="my-1 w-full">
         <Pls />
       </div>
       <div className="mt-[10vh]">

@@ -22,7 +22,7 @@ const Navbar = () => {
 const {state} = useContext(ShopAppContext)  
   const navigate = useNavigate()
   return (
-    <div className="relative">
+    <div className="relative header">
       {/* Desktop Navbar */}
       <div className="flex justify-between cursor-pointer items-center px-4 py-2 sm:px-0">
         <img
@@ -78,19 +78,23 @@ const {state} = useContext(ShopAppContext)
             <button className="text-2xl self-end mb-4" onClick={toggleMenu}>
               <IoCloseOutline />
             </button>
-            <a href="#" className="py-2 text-2xl">
+            <a href="#" onClick={() => navigate("/")} className="py-2 text-2xl">
               Home
             </a>
-            <a href="#" className="py-2 text-2xl">
+            <a href="#" onClick={() => navigate("/")} className="py-2 text-2xl">
               Products
             </a>
-            <a href="#" className="py-2 text-2xl">
+            <a href="#" onClick={() => navigate("/")} className="py-2 text-2xl">
               Blog
             </a>
-            <a href="#" className="py-2 text-2xl">
+            <a
+              href="# "
+              onClick={() => navigate("/")}
+              className="py-2 text-2xl"
+            >
               FAQ
             </a>
-            <a href="#" className="py-2 text-2xl">
+            <a href="#" onClick={() => navigate("/")} className="py-2 text-2xl">
               Contact Us
             </a>
           </div>

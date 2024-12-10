@@ -21,6 +21,18 @@ function Karzinka() {
         SetOpen(false)
         Setselect(null)
     }
+    function FucPrice(product){
+        const count = product.quantity
+        return count * product.price
+    }
+
+
+    function PriceAllProduct(){
+        return state.data.reduce((acc,product)=>{
+            const product_total = FucPrice(product)
+            return acc + product_total
+        },0)
+    }
   return (
     <section>
       {state.data.length === 0 ? (
@@ -52,13 +64,15 @@ function Karzinka() {
                   src={e.images[1]}
                   alt={e.name}
                 />
-                <p className='text-[blue]'>{e.name}</p>
-                <em className='text-[red]'>{e.model}</em>
-                <p className='text-[green]'>{e.price}$</p>
+                <p className="text-[blue]">{e.name}</p>
+                <em className="text-[red]">{e.model}</em>
+                <p className="text-[green]">{FucPrice(e)}$</p>
                 <div className="flex items-center gap-3">
-                  <Button onClick={()=> dispatch({type:'qoshish', })}>+</Button>
+                  <Button onClick={() => dispatch({ type: "increment" , value: {id:e.id}})}>
+                    +
+                  </Button>
                   {e.quantity}
-                  <Button>-</Button>
+                  <Button onClick={()=>dispatch({type:'decrement',value:{id:e.id}})}>-</Button>
                 </div>
                 <div className="flex gap-3">
                   <Button
@@ -100,7 +114,10 @@ function Karzinka() {
               </li>
             </div>
           ))}
-          <p className='text-2xl my-4'>Total price : 0</p>
+          <div className='flex items-center gap-6'>
+          <strong className="text-2xl my-4">Total price :</strong>
+          <strong className='text-2xl my-4'>{PriceAllProduct()}$</strong>
+          </div>
         </div>
       )}
     </section>
