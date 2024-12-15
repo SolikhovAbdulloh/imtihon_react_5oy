@@ -30,7 +30,7 @@ function Products() {
             "Join the digital revolution"
           </p>
           <br />
-          <Button className="bg-[#F45E0C] rounded-[8px] px-[16px] py-[8px] w-[288px] h-[56px] mx-auto lg:mx-0">
+          <Button className="bg-[#F45E0C] text-white rounded-[8px] px-[16px] py-[8px] w-[288px] h-[56px] mx-auto lg:mx-0">
             Explore More
           </Button>
         </div>

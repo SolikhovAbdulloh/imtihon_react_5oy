@@ -1,13 +1,11 @@
-
-
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "MacBook Pro M2 MNEJ3 2022 LLA 13.3 inch",
       "category": "Laptop",
       "brand": "Apple",
-      "Skidka":"25%",
+      "Skidka": "25%",
       "model": "MNEJ3",
       "year": 2022,
       "screen_size": "13.3 inch",
@@ -16,18 +14,18 @@
       "storage": "256 GB SSD",
       "color": "Space Gray",
       "price": 1499,
-      "oldprice":"100$",
+      "oldprice": "100$",
       "description": "The MacBook Pro M2 MNEJ3 2022 model comes with the powerful Apple M2 chip, 8GB of RAM, and 256GB of storage, offering exceptional performance and a stunning 13.3-inch Retina display.",
       "battery_life": "Up to 20 hours of video playback",
       "rating": 4.8,
       "images": [
-        "https://images.uzum.uz/cqcv3ikqvss6ad8ilu10/original.jpg",
         "https://images.uzum.uz/cqcv3jkqvss6ad8ilu1g/original.jpg",
-        "https://images.uzum.uz/cqcv3kksslotj05l4520/original.jpg"
+        "https://images.uzum.uz/cqcv3kksslotj05l4520/original.jpg",
+        "https://images.uzum.uz/cqcv3ikqvss6ad8ilu10/original.jpg"
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "Skidka": "35%",
       "oldprice": "200$",
       "name": "Inateck 12.3 - 13 inch MacBook Case Sleeve",
@@ -41,13 +39,13 @@
       "description": "The Inateck MacBook case sleeve is made of high-quality neoprene material that provides protection against dust, scratches, and minor impacts for your 12.3 - 13 inch MacBook.",
       "rating": 4.3,
       "images": [
-        "https://m.media-amazon.com/images/I/91zqvPFHvaL._AC_SX679_.jpg",
         "https://m.media-amazon.com/images/I/71uGUseY0xL._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/81mACDJ8+YL._AC_SL1500_.jpg"
+        "https://m.media-amazon.com/images/I/81mACDJ8+YL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/91zqvPFHvaL._AC_SX679_.jpg"
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Laptop Privacy Screen for 13 Macbook",
       "category": "Accessories",
       "brand": "Generic",
@@ -60,13 +58,13 @@
       "description": "This privacy screen for 13 inch MacBook Pro and MacBook Air provides excellent privacy protection by limiting the viewing angle, ensuring that others cannot see your screen from the side.",
       "rating": 3.9,
       "images": [
+        "https://img.kwcdn.com/product/fancy/de5c1697-ddb3-48ea-ba82-82f175ab2bbf.jpg?imageView2/2/w/800/q/70/format/webp",
         "https://img.kwcdn.com/product/fancy/c8c9038e-ea10-4828-b57e-291cd65cea09.jpg?imageView2/2/w/800/q/70/format/webp",
-        "https://img.kwcdn.com/product/fancy/a4fd11ae-22a6-4eca-9b33-0ab26f22501e.jpg?imageView2/2/w/800/q/70/format/webp",
-        "https://img.kwcdn.com/product/fancy/de5c1697-ddb3-48ea-ba82-82f175ab2bbf.jpg?imageView2/2/w/800/q/70/format/webp"
+        "https://img.kwcdn.com/product/fancy/a4fd11ae-22a6-4eca-9b33-0ab26f22501e.jpg?imageView2/2/w/800/q/70/format/webp"
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Apple Magic Mouse",
       "category": "Accessories",
       "brand": "Apple",
@@ -79,13 +77,13 @@
       "Skidka": "55%",
       "oldprice": "170$",
       "images": [
-        "https://images.uzum.uz/ckgg5vrk9fq8lb3ae3fg/original.jpg",
         "https://images.uzum.uz/ckgg68rk9fq8lb3ae3j0/original.jpg",
-        "https://images.uzum.uz/ckm0jq4jvf2tgsrpbusg/original.jpg"
+        "https://images.uzum.uz/ckm0jq4jvf2tgsrpbusg/original.jpg",
+        "https://images.uzum.uz/ckgg5vrk9fq8lb3ae3fg/original.jpg"
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "iPhone 15 Pro Max",
       "category": "Phone",
       "brand": "Apple",
@@ -103,13 +101,13 @@
       "battery_life": "Up to 29 hours of video playback",
       "rating": 4.9,
       "images": [
+        "https://images.uzum.uz/cnhjhulbl7rtgkb8mrm0/original.jpg",
         "https://images.uzum.uz/cnhjhudbl7rtgkb8mrlg/original.jpg",
-        "https://images.uzum.uz/cnhjhu5bl7rtgkb8mrl0/original.jpg",
-        "https://images.uzum.uz/cnhjhulbl7rtgkb8mrm0/original.jpg"
+        "https://images.uzum.uz/cnhjhu5bl7rtgkb8mrl0/original.jpg"
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Canon EOS R5 Camera",
       "category": "Camera",
       "brand": "Canon",
@@ -120,13 +118,13 @@
       "description": "The Canon EOS R5 is a mirrorless camera with a 45MP full-frame sensor, offering high-speed performance, 8K video recording, and advanced autofocus capabilities, ideal for professional photographers and videographers.",
       "rating": 4.5,
       "images": [
+        "https://images.uzum.uz/ct4rc15pb7f3jk81eft0/original.jpg",
         "https://images.uzum.uz/ct4rc145j42b32f4a8mg/original.jpg",
-        "https://images.uzum.uz/ct4rc145j42b32f4a8m0/original.jpg",
-        "https://images.uzum.uz/ct4rc15pb7f3jk81eft0/original.jpg"
+        "https://images.uzum.uz/ct4rc145j42b32f4a8m0/original.jpg"
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Samsung Galaxy Watch 6",
       "category": "Smartwatch",
       "brand": "Samsung",
@@ -137,11 +135,11 @@
       "Skidka": "35%",
       "oldprice": "600$",
       "images": [
-        "https://images.uzum.uz/cmtrljps99ouqbfsrpa0/original.jpg",
         "https://images.uzum.uz/cmtrlk125kub33f21rlg/original.jpg",
-        "https://images.uzum.uz/cqhmthnfrr8a72r5roug/original.jpg"
+        "https://images.uzum.uz/cqhmthnfrr8a72r5roug/original.jpg",
+        "https://images.uzum.uz/cmtrljps99ouqbfsrpa0/original.jpg"
       ]
     }
+   
   ]
 }
-

@@ -46,6 +46,9 @@ const {state} = useContext(ShopAppContext)
           <a href="#" onClick={() => navigate("/")}>
             Contact Us
           </a>
+          <a href="#" onClick={() => navigate("/dashboard")}>
+            Dashboard
+          </a>
         </div>
         <div className="flex gap-[20px]">
           <Button className="border-none" onClick={() => navigate("like")}>
@@ -55,7 +58,7 @@ const {state} = useContext(ShopAppContext)
           </Button>
           <Button className="border-none" onClick={() => navigate("karzinka")}>
             <Badge count={state.data.length}>
-              <CiShoppingBasket className="text-2xl" />
+              <CiShoppingBasket className="text-2xl"/>
             </Badge>
           </Button>
           <Button className="border-none">

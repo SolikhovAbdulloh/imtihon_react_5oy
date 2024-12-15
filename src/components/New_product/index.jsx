@@ -64,7 +64,7 @@ function NewProduct(props) {
                     model: model,
                     brand: brand,
                     category: category,
-                    rangi:color,
+                    rangi: color,
                   },
                 });
 
@@ -77,25 +77,25 @@ function NewProduct(props) {
             <FaStar />
             <p>{rating}</p>
           </span>
-          <Button>
-            <LuShoppingBag
-              onClick={() => {
-                dispatch({
-                  type: "add",
-                  value: {
-                    id: id,
-                    name: name,
-                    images: images,
-                    model: model,
-                    brand: brand,
-                    price: price,
-                    desc: description,
-                  },
-                });
+          <Button
+            onClick={() => {
+              dispatch({
+                type: "add",
+                value: {
+                  id: id,
+                  name: name,
+                  images: images,
+                  model: model,
+                  brand: brand,
+                  price: price,
+                  desc: description,
+                },
+              });
 
-                notify1({ type: "add" });
-              }}
-            />
+              notify1({ type: "add" });
+            }}
+          >
+            <LuShoppingBag />
           </Button>
         </div>
         <div className="absolute top-1 left-0 bg-[#FDDBC9] rounded-md p-1"></div>

@@ -57,9 +57,14 @@ const ShopContext = ({ children }) => {
         localStorage.setItem("shop", JSON.stringify(filter));
         return { ...state, data: filter };
       }
+      case "deleteItem": {
+        console.log(value);
+        const filter = state.filter((item) => item.id !== value.id);
+        return { ...state,  filter };
+      }
       case "Deleteliked": {
         const filter = state.liked.filter((item) => item.id !== value.id);
-        localStorage.setItem("liked", JSON.stringify(filter));
+        localStorage.setItem("likes", JSON.stringify(filter));
         console.log(filter, state.liked);
         return { ...state, liked: filter };
       }
@@ -71,15 +76,15 @@ const ShopContext = ({ children }) => {
         localStorage.setItem("shop", JSON.stringify(updatedData));
         return { ...state, data: updatedData };
       }
-      
-      case 'decrement':{
-         const updatedData = state.data.map((item) =>
-           item.id === value.id
-             ? { ...item, quantity: item.quantity > 0 ? item.quantity - 1 : 0}
-             : item
-         );
-         localStorage.setItem("shop", JSON.stringify(updatedData));
-         return { ...state, data: updatedData };
+
+      case "decrement": {
+        const updatedData = state.data.map((item) =>
+          item.id === value.id
+            ? { ...item, quantity: item.quantity > 0 ? item.quantity - 1 : 0 }
+            : item
+        );
+        localStorage.setItem("shop", JSON.stringify(updatedData));
+        return { ...state, data: updatedData };
       }
 
       default:

@@ -44,7 +44,7 @@ a:hover {
   padding: 20px;
   transition: box-shadow 0.3s ease-in-out;
 }
-.header{
+.header {
   top: 0px;
   position: sticky;
   z-index: 999;
@@ -66,11 +66,20 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media (max-width:1087px) {
-  .pls{
+@media (max-width: 1087px) {
+  .pls {
     display: none;
   }
-  .pls1{
+  .pls1 {
     display: none;
   }
+}
+ul li:hover {
+  border-radius: 9px;
+  width: 158px;
+  height: 42px;
+  background: rgba(27, 89, 248, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

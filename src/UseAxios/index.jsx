@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { request } from "../../server";
 
-function UseAxios({ url, method = "GET", body, params }) {
+function UseAxios({ url, method = "GET", body, params }){
   const [loading, Setloading] = useState(true);
   const [data, Setdata] = useState([]);
   const [error, Seterror] = useState(null);
@@ -10,13 +10,13 @@ function UseAxios({ url, method = "GET", body, params }) {
       url,
       method,
       data: body,
+      params,
       headers: {
-        "Content-Type": "application-json",
-        ...params,
+        "Content-Type": "application/json",
+        
       },
     })
       .then((data) => {
-        
         Setdata(data.data);
         Setloading(false);
       })
@@ -24,9 +24,9 @@ function UseAxios({ url, method = "GET", body, params }) {
         Seterror(error.message);
         Setloading(false);
       });
-  }, []);
+  }, [url,method,body,params]);
 
-  return { data, loading };
+  return { data, loading,error };
 }
 
 export default UseAxios;
