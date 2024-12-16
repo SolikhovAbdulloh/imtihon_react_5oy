@@ -1,5 +1,4 @@
 import { createContext, useReducer } from "react";
-import { data } from "react-router-dom";
 
 const ShopAppContext = createContext({});
 

@@ -21,7 +21,7 @@ function Add_product() {
     const newCard = {
       model: value.model,
       price: value.price,
-      image: imageUrl, // Rasm URL'ini qo'shish
+      images: [...imageUrl], // Rasm URL'ini qo'shish
     };
 
     axios

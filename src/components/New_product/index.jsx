@@ -48,9 +48,8 @@ function NewProduct(props) {
           {isLiked ? (
             <HeartFilled
               className="text-[red] absolute top-0 right-0"
-              onClick={() => dispatch({ type: "Deleteliked", value: { id } })}
-            />
-          ) : (
+              onClick={() => dispatch({ type: "Deleteliked", value: { id } })}/>)
+               : (
             <HeartOutlined
               className="cursor-pointer absolute top-0 right-0"
               onClick={() => {
